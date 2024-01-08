@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif, sans-serif;
+            background-color: #1B1B32;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;  
+            align-items: center;
+            height: 100vh;
+        }
+
+        form {
+            max-width: 50%;
+            width: 100%;
+            background-color: #1B1B32;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 10px;
+            position: relative;
+        }
+
+        h2::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 2px;
+            background-color: #fff;
+            margin: 10px auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 6px;
+        }
+
+        button {
+            background-color: #3B3B4F;
+            color: #fff;
+            padding: 10px;
+            border: 5px 5px 5px 5px;
+            border-color: white;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 40%;
+        }
+
+        
+    </style>
+</head>
+<body>
+
+    <form>
+        <h2>Registration Form</h2>
+        <p style="text-align: center;">Please fill out this form with the required information.</p>
+
+        <label for="firstName">Enter Your First Name:</label>
+        <input type="text" id="firstName" name="firstName">
+
+        <label for="lastName">Enter Your Last Name:</label>
+        <input type="text" id="lastName" name="lastName">
+
+        <label for="email">Enter Your Email:</label>
+        <input type="email" id="email" name="email">
+
+        <label for="password">Create New Password:</label>
+        <input type="password" id="password" name="password">
+
+        
+        <input type="radio" id="radio1" name="radio" value="option1">
+        <label for="radio1">Personal Account</label>
+        <input type="radio" id="radio2" name="radio" value="option2">
+        <label for="radio2">Business Account</label>
+
+        
+        <input type="checkbox" id="checkbox" name="checkbox">
+        <label for="checkbox" >I accept the <span style="text-decoration: underline;">terms and condition</span></label>
+
+        <label for="picture">Upload your Profile Picture:</label>
+        <input type="file" id="picture" name="picture">
+
+        <label for="number">Input your Age(years)</label>
+        <input type="number" id="number" name="number">
+
+        <label for="select">How did you hear about us?</label>
+        <select id="select" name="select">
+            <option value="option1">Facebook</option>
+            <option value="option2">LinkedIn</option>
+            <option value="option3">Indeed  </option>
+        </select>
+
+        <label for="textarea">Provide a bio:</label>
+        <textarea id="textarea" name="textarea" rows="4"></textarea>
+
+        <div style="text-align: center; border-color: #fff;"><button type="submit">Submit</button></div>
+    </form>
+
+</body>
+</html>
